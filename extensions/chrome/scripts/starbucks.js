@@ -1,3 +1,5 @@
+// TODO 약관, 개인정보 내용 변경시 사용자 동의 확인 알림
+
 chrome.storage.sync.get(['userNm', 'cust_email_addr', 'cust_hp_cp', 'phone1', 'phone2', 'phone3'], function(data) {
 	if (data.userNm && data.cust_email_addr) {
 			// set fields
@@ -13,7 +15,11 @@ chrome.storage.sync.get(['userNm', 'cust_email_addr', 'cust_hp_cp', 'phone1', 'p
 			$('img[onclick="goAct()"]').click();
 		} else {
 			// show instructions dialog
-			
+			$('<div class="modal">\
+				<h1>Starsucks</h1>\
+				<p>처음 본인의 정보를 입력해서 접속하면 앞으로 해당 정보로 자동 연결됩니다.\
+				</div>').appendTo('body').modal({showClose: false, zIndex: 1000});
+
 			// when click, save fields and go.
 			$('img[onclick="goAct()"]').on('click', function() {
 				chrome.storage.sync.set({
