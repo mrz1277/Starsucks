@@ -2,7 +2,7 @@
    "content_scripts": [
       {
          "all_frames": true,
-         "js": [ "jquery-2.1.4.min.js", "index.js" ],
+         "js": [ "lib/jquery-2.1.4.min.js", "scripts/index.js" ],
          "matches": [ 
             "http://first.wifi.olleh.com/starbucks/index_new.html", 
             "http://first.wifi.olleh.com/starbucks/index_en_new.html" 
@@ -11,7 +11,7 @@
       }, 
       {
          "all_frames": true,
-         "js": [ "jquery-2.1.4.min.js", "starbucks.js" ],
+         "js": [ "lib/jquery-2.1.4.min.js", "scripts/starbucks.js" ],
          "matches": [ 
             "https://first.wifi.olleh.com/starbucks/starbucks_kr.php", 
             "https://first.wifi.olleh.com/starbucks/starbucks_en.php" 
@@ -25,7 +25,7 @@
       "tabs", 
       "storage",
       "http://first.wifi.olleh.com/*", 
-      "https://first.wifi.olleh.com/*" 
+      "https://first.wifi.olleh.com/*"
    ],
    "version": "1.0.0"
 }
