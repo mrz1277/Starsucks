@@ -15,9 +15,11 @@
 
 # 지원 브라우저
 
+아래 링크를 클릭해서 설치하세요.
+
 - [x] [크롬](https://chrome.google.com/webstore/detail/starsucks/ccpijncgingpepdgbjaglhnomiikmenp)
-- [x] [사파리]
+- [x] [사파리](https://github.com/mrz1277/Starsucks/releases/download/1.0.0/Starsucks.safariextz)
 - [ ] 파이어폭스
 - [ ] 인터넷 익스플로러
 
-저의 다른 프로젝트들과 마찬가지로 사이트 보수 및 개선으로 현 무선인터넷 사용 구조가 변경되어 작동하지 않을 경우 다른 개발자분께서 풀 리퀘스>트 해주시면 감사하겠습니다. 참고로 다른 브라우저 플러그인 개발은 당분간 계획 없습니다.
+저의 다른 프로젝트들과 마찬가지로 사이트 보수 및 개선으로 현 무선인터넷 사용 구조가 변경되어 작동하지 않을 경우 다른 개발자분께서 풀 리퀘스트 해주시면 감사하겠습니다. 참고로 다른 브라우저 플러그인 개발은 당분간 계획 없습니다.
