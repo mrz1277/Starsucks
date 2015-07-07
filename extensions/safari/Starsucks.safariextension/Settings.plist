@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Key</key>
+		<string>userNm</string>
+		<key>Secure</key>
+		<true/>
+		<key>Title</key>
+		<string>이름</string>
+		<key>Type</key>
+		<string>TextField</string>
+	</dict>
+	<dict>
+		<key>Key</key>
+		<string>cust_email_addr</string>
+		<key>Secure</key>
+		<true/>
+		<key>Title</key>
+		<string>이메일</string>
+		<key>Type</key>
+		<string>TextField</string>
+	</dict>
+	<dict>
+		<key>Key</key>
+		<string>cust_hp_cp</string>
+		<key>Secure</key>
+		<true/>
+		<key>Title</key>
+		<string>통신사</string>
+		<key>Titles</key>
+		<array>
+			<string>KT</string>
+			<string>SKT</string>
+			<string>LG U+</string>
+		</array>
+		<key>Type</key>
+		<string>RadioButtons</string>
+		<key>Values</key>
+		<array>
+			<string>kt</string>
+			<string>sk</string>
+			<string>lg</string>
+		</array>
+	</dict>
+	<dict>
+		<key>Key</key>
+		<string>phone</string>
+		<key>Secure</key>
+		<true/>
+		<key>Title</key>
+		<string>휴대폰번호</string>
+		<key>Type</key>
+		<string>TextField</string>
+	</dict>
+</array>
+</plist>

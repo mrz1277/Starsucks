@@ -2,7 +2,7 @@
   display: none;
   width: 400px;
   background: #fff;
-  padding: 15px 30px;
+  padding: 15px 30px !important;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   -o-border-radius: 8px;
@@ -23,7 +23,7 @@
   width: 30px;
   height: 30px;
   text-indent: -9999px;
-  background: url('chrome-extension://__MSG_@@extension_id__/images/close.png') no-repeat 0 0;
+  background: url('../images/close.png') no-repeat 0 0;
 }
 
 .modal-spinner {

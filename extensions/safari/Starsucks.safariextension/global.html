@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+
+<script>
+    function respondToMessage(event) {
+    	if (event.name === 'getValues') {
+    		var values = {};
+    		var keys = event.message.split(',');
+
+    		keys.forEach(function(key) {
+    			if (safari.extension.secureSettings[key]) {
+    				values[key] = safari.extension.secureSettings[key];
+    			}
+    		});
+
+    		if (Object.keys(values).length === 0) {
+    			values = null;
+    		}
+
+    		event.target.page.dispatchMessage(event.message, values);
+    	} else { // set value
+    		safari.extension.secureSettings[event.name] = event.message;
+    	}
+    }
+
+    safari.application.addEventListener("message", respondToMessage, false);
+
+</script>
