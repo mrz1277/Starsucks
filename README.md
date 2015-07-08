@@ -56,6 +56,14 @@ sudo mv /System/Library/CoreServices/Captive\ Network\ Assistant.app/ /System/Li
 
 하지만 OS X 10.11(El Capitan)에서는 관리자 권한을 가진 사용자도 시스템 파일 변경을 금지하고 있기 때문에 강제로 Rootless 기능을 비활성하지 않는한 변경할 수 없음을 참고하셔야 합니다.
 
+# 입력 정보 수정
+
+사파리는 환경설정(⌘,)에서 `확장 프로그램` 탭에 가면 입력 정보를 수정할 수 있습니다.
+
+![pref](https://raw.githubusercontent.com/mrz1277/Starsucks/master/images/safari_pref.png)
+
+크롬은 별도의 수정할 수 있는 창이 없어서 다시 재설치하셔야 합니다.
+
 # 마무리
 
 저의 다른 프로젝트들과 마찬가지로 사이트 보수 및 개선으로 현 무선인터넷 사용 구조가 변경되어 작동하지 않을 경우 언제든 다른 개발자분께서 풀 리퀘스트 해주시면 감사하겠습니다.
