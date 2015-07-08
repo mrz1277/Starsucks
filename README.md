@@ -1,17 +1,8 @@
-# 스타벅스 무선랜 자동 접속 플러그인
+# 스타벅스 와이파이 자동 완성 플러그인
 
 ![sucks](https://raw.githubusercontent.com/mrz1277/Starsucks/master/images/sucks.jpg)
 
-카페에 종종 노트북을 가지고 가서 작업한다.
-보통 카페에 있는 무선공유기는 비밀번호를 입력하는 방식이다.(아예 없는 경우도 있지만)
-하지만 KT 무선공유기를 쓰는 스타벅스만 유일하게 사용자 개인정보와 동의를 매번 구한다.
-자주 이용하는 고객 입장에선 한번 저장 시켜놓은 패스워드로 계속 이용하는 방식이 더 간편하다.
-
-그동안 이런 가려운 부분을 긁어줄 프로그램들과 인증을 우회하는 방법들이 몇몇 있었다.
-최근 알게된 브라우져 [북마크 방식의 스크립트](http://tumblog.ryubro.com/post/119509867393/starbucks-wifi-bookmarklet)가 있고,
-그보다 훨씬 전에 한 개발팀에서 만든 [크롬 확장 프로그램](https://chrome.google.com/webstore/detail/ladybucks/fnpekdnicnempagdlmphknomnopaognh?hl=ko)이 있었다.
-북마크 방식은 간편하지만 약간의 수작업(클릭 3번)이 필요하고, 크롬 확장 프로그램은 오래되서 현재 작동하지 않는다.
-이참에 현 스타벅스의 정책을 최대한 위반하지 않는 선에서(무작위 값 입력 방지) 브라우저에서 작동하는 확장 프로그램을 만들어 보았다.
+스타벅스에서 와이파이 연결할때마다 이름, 이메일등 똑같은 값을 입력해야 하는 번거로움을 줄이고자 만들었습니다. 한번 입력해놓은 값으로 자동을 채워서 연결합니다.
 
 # 지원 브라우저
 
@@ -54,7 +45,7 @@ _파이어폭스와 인터넷 익스플로러는 개발 계획 없습니다._
 sudo mv /System/Library/CoreServices/Captive\ Network\ Assistant.app/ /System/Library/CoreServices/XCaptive\ Network\ Assistant.app/
 ```
 
-하지만 OS X 10.11(El Capitan)에서는 관리자 권한을 가진 사용자도 시스템 파일 변경을 금지하고 있기 때문에 강제로 Rootless 기능을 비활성하지 않는한 변경할 수 없음을 참고하셔야 합니다.
+하지만 OS X 10.11(El Capitan)에서는 관리자 권한을 가진 사용자도 시스템 파일 변경을 금지하고 있기 때문에 강제로 Rootless 기능을 비활성하지 않는한 변경할 수 없는 점 참고하세요.
 
 # 입력 정보 수정
 
