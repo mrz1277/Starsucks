@@ -11,6 +11,7 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <script src="javascripts/jquery.min.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -35,7 +36,7 @@
 <p>아래 링크를 클릭해서 설치하세요.</p>
 
 <ul>
-<li> <a href="https://chrome.google.com/webstore/detail/starsucks/ccpijncgingpepdgbjaglhnomiikmenp">크롬</a>: 크롬 웹스토어에서 설치</li>
+<li> <a href="https://chrome.google.com/webstore/detail/starsucks/ccpijncgingpepdgbjaglhnomiikmenp" class="add-to-chrome">크롬</a>: 크롬 웹스토어에서 설치</li>
 <li> <a href="https://github.com/mrz1277/Starsucks/releases/download/1.0.0/Starsucks.safariextz">사파리</a>: 다운 받은 후 더블 클릭으로 설치</li>
 </ul>
 
@@ -101,6 +102,21 @@
   ga('send', 'pageview');
 
 </script>
+<script>
+  var appUrl = 'https://chrome.google.com/webstore/detail/starsucks/ccpijncgingpepdgbjaglhnomiikmenp';
+    if (window.chrome && window.navigator.vendor === 'Google Inc.') {
+      $('.add-to-chrome').click(function(e) {
+        if(!chrome.app.isInstalled) {
+          e.preventDefault();
+          chrome.webstore.install(appUrl);
+        }
+      });
+    }
+
+    $('a').on('click', function(a) {
+      ga('send', 'event', a.target.id, 'clicked');
+    });
+  </script>
 
   </body>
 </html>
