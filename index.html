@@ -9,10 +9,21 @@
     <link rel="stylesheet" href="stylesheets/github-light.css">
     <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/ccpijncgingpepdgbjaglhnomiikmenp">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="google-site-verification" content="4SKBONTE1GfGT_qROjsuCJ7xLg4BYT75Ruh6cik26M4" />
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <script src="javascripts/jquery.min.js"></script>
+    <script src="javascripts/scale.fix.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-56819167-4', 'auto');
+      ga('send', 'pageview');
+    </script>
   </head>
   <body>
     <div class="wrapper">
@@ -92,26 +103,16 @@
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-          <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-56819167-4', 'auto');
-  ga('send', 'pageview');
-
-</script>
+    
 <script>
   var appUrl = 'https://chrome.google.com/webstore/detail/ccpijncgingpepdgbjaglhnomiikmenp';
     if (window.chrome && window.navigator.vendor === 'Google Inc.') {
-      // $('.add-to-chrome').click(function(e) {
-      //   if(!chrome.app.isInstalled) {
-      //     e.preventDefault();
-      //     chrome.webstore.install(appUrl);
-      //   }
-      // });
+      $('.add-to-chrome').click(function(e) {
+        if(!chrome.app.isInstalled) {
+          e.preventDefault();
+          chrome.webstore.install(appUrl, function() { console.log('success'); }, function(err){ console.error(err); document.location.href = appUrl; });
+        }
+      });
     }
 
     $('a').on('click', function(a) {
