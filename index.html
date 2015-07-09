@@ -106,12 +106,12 @@
 <script>
   var appUrl = 'https://chrome.google.com/webstore/detail/ccpijncgingpepdgbjaglhnomiikmenp';
     if (window.chrome && window.navigator.vendor === 'Google Inc.') {
-      $('.add-to-chrome').click(function(e) {
-        if(!chrome.app.isInstalled) {
-          e.preventDefault();
-          chrome.webstore.install(appUrl);
-        }
-      });
+      // $('.add-to-chrome').click(function(e) {
+      //   if(!chrome.app.isInstalled) {
+      //     e.preventDefault();
+      //     chrome.webstore.install(appUrl);
+      //   }
+      // });
     }
 
     $('a').on('click', function(a) {
