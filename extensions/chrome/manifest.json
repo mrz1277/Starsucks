@@ -39,13 +39,12 @@
       },
       "default_title": "Starsucks"
    },
-   "permissions": [ 
-      "tabs", 
+   "permissions": [
       "storage",
       "http://first.wifi.olleh.com/*", 
       "https://first.wifi.olleh.com/*"
    ],
    "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "1.0.0",
+   "version": "1.0.1",
    "web_accessible_resources": [ "images/*" ]
 }
