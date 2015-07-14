@@ -25,7 +25,6 @@ _파이어폭스와 인터넷 익스플로러는 개발 계획 없습니다._
 4. 접속 페이지에 접근하기 위해 주소창에 아무 URL이나 입력합니다. (예: google.com)
 
 5. 접속 페이지가 뜨면 처음 사용시 아래와 같은 화면이 뜹니다.
-
 ![popup](https://raw.githubusercontent.com/mrz1277/Starsucks/master/images/popup.png)
 
 6. 메세지창을 닫고 앞으로 자동 접속에 사용할 정보들을 입력하고 동의 버튼을 누릅니다.
@@ -46,6 +45,13 @@ sudo mv /System/Library/CoreServices/Captive\ Network\ Assistant.app/ /System/Li
 ```
 
 하지만 OS X 10.11(El Capitan)에서는 관리자 권한을 가진 사용자도 시스템 파일 변경을 금지하고 있기 때문에 강제로 Rootless 기능을 비활성하지 않는한 변경할 수 없는 점 참고하세요.
+
+**_업데이트(07.14)_**
+[신정규](https://www.facebook.com/jeongkyu.shin)님께서 공유해주신 또다른 방법입니다. 위 파일 이름 변경보다 깔끔하고 10.11에서도 잘 동작합니다.
+
+```
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.captive.control Active -boolean false
+```
 
 # 입력 정보 수정
 
