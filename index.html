@@ -84,6 +84,12 @@
 
 <p>하지만 OS X 10.11(El Capitan)에서는 관리자 권한을 가진 사용자도 시스템 파일 변경을 금지하고 있기 때문에 강제로 Rootless 기능을 비활성하지 않는한 변경할 수 없는 점 참고하세요.</p>
 
+<p><strong><em>업데이트(07.14)</em></strong>
+<a href="https://www.facebook.com/jeongkyu.shin">신정규</a>님께서 공유해주신 또다른 방법입니다. 위 파일 이름 변경보다 깔끔하고 10.11에서도 잘 동작합니다.</p>
+
+<pre><code>sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.captive.control Active -boolean false
+</code></pre>
+
 <h1>
 <a id="입력-정보-수정" class="anchor" href="#%EC%9E%85%EB%A0%A5-%EC%A0%95%EB%B3%B4-%EC%88%98%EC%A0%95" aria-hidden="true"><span class="octicon octicon-link"></span></a>입력 정보 수정</h1>
 
@@ -103,7 +109,7 @@
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
-    
+
 <script>
   var appUrl = 'https://chrome.google.com/webstore/detail/ccpijncgingpepdgbjaglhnomiikmenp';
     if (window.chrome && window.navigator.vendor === 'Google Inc.') {
